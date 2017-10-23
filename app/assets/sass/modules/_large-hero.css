@@ -1,0 +1,46 @@
+.large-hero {
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	&__content {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		top:25%;
+
+		@mixin atMedium {
+			top:20%;
+		}
+		
+	h1 {
+		color: #FFF;
+		font-family: 'Proxima Nova', 'Roboto', sans-serif;
+		font-size: 1.6rem;
+		margin-bottom: 0;
+
+		@mixin atMedium {
+			font-size: 2.4rem;
+			font-weight: 500;
+			margin-bottom: 30px;			
+		}
+
+	}
+	h6 {
+		color:$primaryColor;
+		font-size: 1rem;
+		font-weight: 300;
+		width: 100%;
+		text-align:center;
+	}
+}
+
+
+}

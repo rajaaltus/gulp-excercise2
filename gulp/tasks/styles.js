@@ -11,5 +11,9 @@ gulp.task('styles', function() {
 
 	return gulp.src('./app/assets/sass/styles.css')
 		.pipe(postcss([cssImport,mixins,nested,cssvars,hexrgba,autoprefixer]))
+		.on('error', function(errorInfo) {
+			console.log(errorInfo.toString());	
+			this.emit('end');
+		})
 		.pipe(gulp.dest('./app/temp/styles'));
 });

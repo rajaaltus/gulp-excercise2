@@ -1,0 +1,42 @@
+.site-header {
+	
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+
+	@mixin atMedium {
+		display: flex;
+
+	}
+	
+
+	&__logo {
+		
+		margin-top:30px;
+		font-size: 1.3rem;
+		color:#FFF;
+		font-weight: 100;
+
+		@mixin atMedium {
+			flex-basis: 15%;
+			margin-top:50px;
+			font-size: 1.8rem;
+		}
+
+		strong {
+			font-weight: 700;
+		}
+	}
+
+	&__menu {
+		opacity: 0;
+
+		@mixin atMedium {
+			flex-basis: 60%;
+			float: right;	
+			opacity: 1;
+		}
+		
+	}
+}

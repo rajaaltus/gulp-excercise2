@@ -1,0 +1,32 @@
+.btn {
+	background-color: #FFF;
+	color:$primaryColor;
+	text-decoration: none;
+	padding: .75rem 3rem;
+	display: inline-block;
+	border-radius: 40px;
+	margin-bottom:0p;
+	margin-top:20px;
+	margin:20px 20px 0 20px;
+
+
+	@mixin atMedium {
+		margin-top:60px;
+	}
+
+	&--transparent {
+		background-color: rgba(#FFF, .01);
+		color:#FFF;
+		border: 1px solid rgba($primaryColor, 0.9);
+
+	}
+
+	i {
+		padding-right:18px;
+	}
+
+	&:hover {
+		background-color: #FFF;
+		color:$primaryColor;
+	}
+}

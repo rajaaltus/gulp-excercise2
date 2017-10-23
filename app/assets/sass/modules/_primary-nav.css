@@ -1,0 +1,21 @@
+.primary-nav {
+	float: right;
+	padding: 67px 0 67px 0;
+
+	ul {
+		
+		
+	}
+
+	li {
+		display: inline-block;
+		list-style: none;
+		padding-right: 35px;
+		font-weight: 200;
+	}
+	a {
+		display: inline-block;
+		
+	}
+
+}

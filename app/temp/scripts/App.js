@@ -70,7 +70,5 @@
 "use strict";
 
 
-alert("This is new");
-
 /***/ })
 /******/ ]);
