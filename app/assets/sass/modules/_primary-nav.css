@@ -1,21 +1,29 @@
 .primary-nav {
-	float: right;
-	padding: 67px 0 67px 0;
+		padding: 5px 10px;
 
-	ul {
-		
-		
-	}
+		@mixin atMedium {
+			padding: 90px 0 67px 0;
+		}
+
+
+	
 
 	li {
-		display: inline-block;
+
 		list-style: none;
-		padding-right: 35px;
 		font-weight: 200;
+		display: block;
+		padding-bottom:20px;
+
+		@mixin atMedium {
+			display: inline-block;	
+		}
+
 	}
+
 	a {
-		display: inline-block;
 		
+		padding-right: 35px;	
 	}
 
 }
