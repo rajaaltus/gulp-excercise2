@@ -1,0 +1,73 @@
+.two-column-section {
+
+	@mixin atMedium {
+		display: flex;
+		
+
+	}
+
+
+
+	&--reverse {
+		flex-direction: row-reverse;
+	}
+
+	img {
+		width:100%;
+		height: 100%;
+		background-size: cover;
+	}
+
+
+
+
+	&__left-section {
+
+		text-align: center;
+
+		@mixin atMedium {
+			flex-basis: 50%;
+			text-align: left;
+
+		}
+
+		
+	}
+
+	&__right-section {
+
+		text-align: center;
+		padding-bottom: 20px;
+
+		@mixin atMedium {
+			flex-basis: 50%;
+			text-align: left;
+			
+		}
+
+		span {
+
+			display: block;
+			max-width: 80%;
+			margin-left:10%;
+			margin-right: 15%;
+
+		}
+
+		h2 {
+			font-size: 1.5rem;
+
+			@mixin atMedium {
+				font-size: 2rem;
+				margin-top:20%;
+			}
+		}
+
+
+		
+	}
+
+	
+
+
+}

@@ -1,0 +1,35 @@
+.icon-section {
+	@mixin clearfix;
+	margin-top:-10px;
+	background-color: $sectionBackground;
+	text-align: center;
+	padding-bottom: 95px;
+
+	.wrapper {
+		@mixin atMedium {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 0;
+		}	
+	}
+	
+
+	img {
+		width: 136px;
+		height: 100px;
+		margin:0;
+		padding: 0;
+	}
+
+	&__section-block {
+		padding-top: 30px;
+		padding-bottom: 15px;
+		@mixin atMedium {
+			flex-basis: 23%;
+			margin-top:115px;	
+
+		}
+		
+	}
+
+}

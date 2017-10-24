@@ -9,6 +9,15 @@
 	margin-top:20px;
 	margin:20px 20px 0 20px;
 
+	&--blue {
+		background-color: $primaryButton;
+		color:#FFF;
+		font-weight: 200;
+	
+	}
+
+	
+
 
 	@mixin atMedium {
 		margin-top:60px;
@@ -26,7 +35,9 @@
 	}
 
 	&:hover {
-		background-color: #FFF;
+		background-color: $primaryButton;
 		color:$primaryColor;
+		
 	}
+	
 }
