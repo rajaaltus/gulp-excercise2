@@ -1,15 +1,11 @@
 .primary-nav {
-		padding: 5px 10px;
+		padding-top: 15px;
 
 		@mixin atMedium {
 			padding: 90px 0 67px 0;
 		}
 
-
-	
-
 	li {
-
 		list-style: none;
 		font-weight: 200;
 		display: block;
@@ -18,12 +14,12 @@
 		@mixin atMedium {
 			display: inline-block;	
 		}
-
 	}
 
 	a {
 		
-		padding-right: 35px;	
+		@mixin atMedium {
+			padding-right: 35px;		
+		}
 	}
-
 }

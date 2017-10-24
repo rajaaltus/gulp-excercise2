@@ -17,6 +17,12 @@
 	}
 
 	
+	&--scroll:hover {
+		background-color: rgba($primaryColor, .01);
+		color:rgba($primaryColor, .01);
+	}
+
+	
 
 
 	@mixin atMedium {

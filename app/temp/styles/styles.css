@@ -571,6 +571,11 @@ p {
 	
 	}
 
+.btn--scroll:hover {
+		background-color: rgba(234,126,68, .01);
+		color: rgba(234,126,68, .01);
+	}
+
 @media (min-width: 800px) {
 
 .btn {
@@ -598,6 +603,7 @@ p {
 
 .site-header {
 	position: absolute;
+	overflow: hidden;
 	z-index: 1;
 	width: 100%;
 	text-align: center;
@@ -748,38 +754,35 @@ p {
 		}
 
 .primary-nav {
-		padding: 5px 10px;
-
+		padding-top: 15px;
 }
 
 @media (min-width: 800px) {
 
 .primary-nav {
 			padding: 90px 0 67px 0
-
 }
 	}
 
 .primary-nav li {
-
 		list-style: none;
 		font-weight: 200;
 		display: block;
 		padding-bottom:20px;
-
 	}
 
 @media (min-width: 800px) {
 
 .primary-nav li {
 			display: inline-block
+	}
+	}
 
-	}
-	}
+@media (min-width: 800px) {
 
 .primary-nav a {
-		
-		padding-right: 35px;	
+			padding-right: 35px
+	}
 	}
 
 .icon-section {
