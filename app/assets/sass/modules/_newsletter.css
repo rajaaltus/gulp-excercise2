@@ -1,0 +1,51 @@
+.newsletter {
+
+	text-align: center;
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-bottom: -10px;
+
+	img {
+		margin:0;
+		padding: 0;
+	}
+
+	
+
+	&__content {
+		position: absolute;
+		top:50%;
+		transform: translateY(-50%);
+		margin-left:auto;
+		margin-right: auto;
+		text-align: center;
+		width: 100%;
+
+
+		h2 {
+			color: #FFF;
+			font-size: 1.6rem;
+			font-weight: 400;
+
+			@mixin atMedium {
+				font-size: 1.9rem;
+					
+			}	
+		}	
+	}
+
+	&__input {
+		background-color: rgba(#FFF, .05);
+		color:$primaryColor;
+		padding: .75rem .5rem;
+		display: inline-block;
+		border-radius: 40px;
+		border:1px solid rgba(#FFF, .2);
+		margin-bottom:0;
+		margin-top:10px;
+		margin:10px 0px 0 5px;
+		width: 250px;
+		outline: 0;
+	}
+}
