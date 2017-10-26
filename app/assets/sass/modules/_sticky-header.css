@@ -1,0 +1,64 @@
+.sticky-header {
+	display: none;
+	@mixin atMedium {
+		opacity: 0;
+		transition: opacity .3s ease-out;
+
+		&--is-visible {
+			opacity: 1;
+			width: 100%;
+			color:#FFF;
+			margin-left: auto;
+			margin-right:auto;
+			text-align: center;
+			font-size: 1rem;
+			font-weight: 300;	
+			z-index: 11;
+			display: flex;
+			position: fixed;
+			background-color: rgba($primaryColor, .9);
+			padding: 15px 0;
+
+			&__logo {
+				position: relative;
+				font-size: 1.5rem;
+				font-weight: 200;
+				background:none;
+				
+				text-align: center;
+				flex-basis: 3;
+				margin-left:7.5%;
+				strong {
+					font-weight: 600;
+				}
+			}
+
+			&__menu{
+				flex-basis: 9;
+				position: relative;
+				margin-top: 10px;
+				margin-bottom:10px;
+			}
+
+			.sticky-header__sticky-nav {
+				float: right;
+
+				ul {
+					margin:0;
+					padding: 0;
+					list-style: none;
+				}
+
+				li {
+					display: inline-block;
+
+
+				}
+				a {
+					text-decoration: none;
+					padding-right: 25px;
+				}
+			}
+		}
+	}
+}
